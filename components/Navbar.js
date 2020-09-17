@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <MDBNavbar light expand="md">
+            <MDBNavbar className="z-depth-0" light expand="md">
                 <MDBContainer className="py-3">
                     <Link href="/">
                         <a className="h2-responsive black-text font-weight-bold m-0">MDB Starter</a>
@@ -27,6 +27,13 @@ const Navbar = () => {
                                 <Link href="/about">
                                     <a className="h6-responsive text-uppercase black-text">
                                         About
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className="mx-lg-4 mx-md-4">
+                                <Link href="/blog">
+                                    <a className="h6-responsive text-uppercase black-text">
+                                        Blog
                                     </a>
                                 </Link>
                             </li>
