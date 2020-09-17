@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../components/Layout';
 
 export async function getStaticProps(){
     const res = await fetch('https://joygaringo-admin.herokuapp.com/blogs')
@@ -12,11 +13,11 @@ export async function getStaticProps(){
 
 const AboutPage = ({blogs}) => {
     return (
-        <div>
+        <Layout page="About">
             <ul>
                 {blogs && blogs.map(blog => <li key={blog.id}>{blog.title}</li>)}
             </ul>
-        </div>
+        </Layout>
     )
 }
 

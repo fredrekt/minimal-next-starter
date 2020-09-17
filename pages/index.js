@@ -1,14 +1,17 @@
 import { MDBBtn, MDBContainer } from 'mdbreact'
 import React from 'react'
+import Layout from '../components/Layout'
 
 const HomePage = () => {
   return (
-    <div>
+    <Layout page="Home">
       <MDBContainer>
         <h1>Hello Home</h1>
-        <MDBBtn color="dark" className="mx-0">Dark Button</MDBBtn>
+        <MDBBtn href="/about" color="dark" className="mx-0">
+        {process.env.NEXT_PUBLIC_APP_NAME}
+        </MDBBtn>
       </MDBContainer>
-    </div>
+    </Layout>
   )
 }
 
