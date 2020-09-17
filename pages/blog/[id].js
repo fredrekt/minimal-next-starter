@@ -30,8 +30,10 @@ const SingleBlog = ({blog}) => {
         return <p>Error 404</p>
     }
 
+    const description = blog.content.replace('*', '');
+
     return (
-        <Layout page={blog.title}>
+        <Layout page={blog.title} desc={description} img={blog.preview.formats.medium.url}>
             <MDBContainer>
                 <h1>{blog.title}</h1>
                 <p className="lead">
