@@ -3925,6 +3925,11 @@ normalize-scroll-left@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-scroll-left/-/normalize-scroll-left-0.1.2.tgz#6b79691ba79eb5fb107fa5edfbdc06b55caee2aa"
   integrity sha512-F9YMRls0zCF6BFIE2YnXDRpHPpfd91nOIaNdDgrx5YMoPLo8Wqj+6jNXHQsYBavJeXP4ww8HCt0xQAKc5qk2Fg==
 
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
+
 object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
