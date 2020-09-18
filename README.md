@@ -1,3 +1,9 @@
+# Minimal Design - Next.JS 
+
+## Design Tools Present
+[Material Design Bootstrap](https://mdbootstrap.com/)
+[Base Web Design](https://baseweb.design/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
