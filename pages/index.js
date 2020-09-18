@@ -10,6 +10,7 @@ const HomePage = () => {
     ['Search Engine Optimization', <Check size={24}/>],
     ['Material Design Bootstrap', <Check size={24}/>],
     ['Progressive Image Loading' , <Check size={24}/>],
+    ['Mobile Ready Frontend Frameworks', <Check size={24}/>],
     ['Minimal Design', <Check size={24}/>],
     ['GRAPHQL Ready', <Check size={24}/>],
     ['Fetch API', <Check size={24}/>],
