@@ -2,6 +2,6 @@
 @import '../node_modules/bootstrap-css-only/css/bootstrap.min.css'; 
 @import '../node_modules/mdbreact/dist/css/mdb.css';
 
-h1, h2, h3, h4, h5, h6, strong, b{
+h1, h2, h3, h4, h5, h6, strong, b, .display-1, .display-2, .display-3, .display-4{
     font-weight: 700;
 }
