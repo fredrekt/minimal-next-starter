@@ -11,7 +11,7 @@ const Navbar = () => {
             <MDBNavbar className="z-depth-0" light expand="md">
                 <MDBContainer className="py-3">
                     <Link href="/">
-                        <a className="h2-responsive black-text font-weight-bold m-0">MDB Starter</a>
+                        <a className="h2-responsive black-text font-weight-bold m-0">{process.env.NEXT_PUBLIC_APP_NAME}</a>
                     </Link>
                     <MDBNavbarToggler onClick={onClick} />
                     <MDBCollapse isOpen={collapse} navbar>
