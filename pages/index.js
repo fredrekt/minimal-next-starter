@@ -1,24 +1,43 @@
-import { MDBContainer } from 'mdbreact'
+import { MDBCol, MDBContainer, MDBRow } from 'mdbreact'
 import React from 'react'
 import Layout from '../components/Layout'
+import Check from 'baseui/icon/check';
+import {Table} from 'baseui/table';
+import {StyledLink} from 'baseui/link';
 
 const HomePage = () => {
+  const DATA = [
+    ['Search Engine Optimization', <Check size={24}/>],
+    ['Material Design Bootstrap', <Check size={24}/>],
+    ['Progressive Image Loading' , <Check size={24}/>],
+    ['Minimal Design', <Check size={24}/>],
+    ['GRAPHQL Ready', <Check size={24}/>],
+    ['Fetch API', <Check size={24}/>],
+    ['Customizable', <Check size={24}/>],
+    ['CSS-in-JS - Styletron', <Check size={24}/>],
+    ['Custom Error Pages', <Check size={24}/>],
+    ['Easy to use', <Check size={24}/>],
+    ['Server Side Rendering', <Check size={24}/>],
+    ['Client Side Rendering', <Check size={24}/>],
+    ['Prerendering', <Check size={24}/>],
+    ['Rehydration', <Check size={24}/>]
+  ];
+  const COLUMNS = ['Features', 'Ready']
+
   return (
     <Layout page="Home">
       <MDBContainer className="py-5">
-        <h1>{process.env.NEXT_PUBLIC_APP_NAME}</h1>
-        <p className="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui magna, rhoncus in tincidunt non, maximus non arcu. Phasellus rutrum justo at eros commodo maximus. Suspendisse in lectus dui. Nunc lacus erat, tincidunt id rhoncus eu, imperdiet quis orci. Ut cursus luctus nulla, eu ullamcorper enim placerat quis. In pellentesque felis laoreet, vestibulum libero vel, mattis dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vulputate risus at lorem congue consequat. Morbi scelerisque nibh ligula, a auctor odio tempor nec. Phasellus aliquam orci ac lectus cursus, ac tincidunt leo sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <p className="lead">
-        In eget augue id augue pulvinar viverra. Cras id tempus elit. Suspendisse ex metus, volutpat sit amet cursus id, placerat non ipsum. Curabitur tincidunt ligula in molestie volutpat. Pellentesque laoreet ornare fermentum. Duis quis dui volutpat, luctus tortor in, accumsan nunc. Nunc aliquam tempus dolor fringilla vehicula. Curabitur pellentesque neque sed massa tincidunt, iaculis malesuada libero ultrices. Cras vitae orci pharetra, eleifend justo sit amet, malesuada neque. Pellentesque nec dolor sit amet risus interdum efficitur.
-        </p>
-        <p className="lead">
-        Cras rhoncus sollicitudin nisl, eu euismod metus ornare at. Nam rhoncus tincidunt lorem. Nullam aliquet mauris in justo faucibus molestie. Morbi imperdiet odio a sem mollis, in interdum nunc consectetur. Praesent efficitur urna ut odio condimentum accumsan. Sed faucibus auctor purus ac porttitor. Mauris sit amet volutpat augue. Cras hendrerit accumsan lacus et rutrum. In vel mauris accumsan, interdum libero vitae, placerat enim. Aliquam at ipsum sapien. Donec vestibulum tristique hendrerit.
-        </p>
-        <p className="lead">
-        Aenean vel risus tellus. Aliquam imperdiet justo sed ultricies imperdiet. Quisque risus neque, aliquam vitae lectus non, mollis blandit enim. Fusce vulputate, est ac cursus finibus, enim tellus cursus magna, in auctor ante tortor ut lectus. Nullam vel lorem quis tellus tempus varius. Cras feugiat pretium massa id venenatis. Praesent lobortis eros id sapien gravida, eu pellentesque purus pharetra. Ut egestas ultrices ipsum eu pulvinar. Quisque ornare vel lacus id facilisis. Quisque eu mollis tellus. Mauris ultrices diam sed enim vulputate gravida. Pellentesque at dignissim urna. In eu vestibulum lectus. Ut tristique eu erat eget efficitur.
-        </p>
+        <MDBRow className="align-items-center">
+          <MDBCol md="6" lg="6">
+            <p className="lead mb-4">What this next.js starter has:</p>
+            <Table columns={COLUMNS} data={DATA} />
+            <div className="content my-5">
+              <StyledLink animateUnderline href="https://mdbootstrap.com/">Read about Material Design Boostrap</StyledLink>
+              <br/>
+              <StyledLink animateUnderline href="https://baseweb.design/">Read more about Base Web</StyledLink>
+            </div>
+          </MDBCol>
+        </MDBRow>
       </MDBContainer>
     </Layout>
   )
