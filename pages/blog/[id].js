@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
 
 const SingleBlog = ({blog}) => {
     const router = useRouter();
-    if(router.isFallback && !blog?.slug){
+    if(router.isFallback && !blog?.id){
         return <p>Error 404</p>
     }
 
