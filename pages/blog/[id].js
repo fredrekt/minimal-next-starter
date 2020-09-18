@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import {useRouter} from 'next/router'
 import { MDBContainer } from 'mdbreact';
+import Markdown from 'markdown-to-jsx';
 
 export const getStaticProps = async ({params}) => {
     const data = await fetch(`${process.env.NEXT_PUBLIC_API_BLOGS}/${params.id}`);
@@ -36,9 +37,9 @@ const SingleBlog = ({blog}) => {
         <Layout page={blog.title} desc={description} img={blog.preview.formats.medium.url}>
             <MDBContainer>
                 <h1>{blog.title}</h1>
-                <p className="lead">
+                <Markdown className="lead">
                     {blog.content}
-                </p>
+                </Markdown>
             </MDBContainer>
         </Layout>
     )

@@ -14,6 +14,7 @@ const HomePage = () => {
     ['Minimal Design', <Check size={24}/>],
     ['GRAPHQL Ready', <Check size={24}/>],
     ['Fetch API', <Check size={24}/>],
+    ['Markdown Ready', <Check size={24}/>],
     ['Customizable', <Check size={24}/>],
     ['CSS-in-JS - Styletron', <Check size={24}/>],
     ['Custom Error Pages', <Check size={24}/>],
