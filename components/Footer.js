@@ -90,22 +90,34 @@ const Footer = () => {
             </MDBRow>
             <MDBRow className="my-3">
               <MDBCol md="2" lg="2">
-                <MDBIcon fab icon="facebook-f" />
+                <a href="https://www.facebook.com/fredgaringo/" target="_blank" rel="noopenner noreferrer" className="black-text">
+                  <MDBIcon fab icon="facebook-f" />
+                </a>
               </MDBCol>
               <MDBCol md="2" lg="2">
-                <MDBIcon fab icon="instagram" />
+                <a href="https://www.instagram.com/fredrekt/" target="_blank" rel="noopenner noreferrer" className="black-text">
+                  <MDBIcon fab icon="instagram" />
+                </a>
               </MDBCol>
               <MDBCol md="2" lg="2">
-                <MDBIcon fab icon="twitter" />
+                <a href="https://twitter.com/FredGaringo" target="_blank" rel="noopenner noreferrer" className="black-text">
+                  <MDBIcon fab icon="twitter" />
+                </a>
               </MDBCol>
               <MDBCol md="2" lg="2">
-                <MDBIcon fab icon="pinterest-p" />
+                <a href="http://github.com/fredrekt" target="_blank" rel="noopenner noreferrer" className="black-text">
+                  <MDBIcon fab icon="pinterest-p" />
+                </a>
               </MDBCol>
               <MDBCol md="2" lg="2">
-                <MDBIcon fab icon="github" />
+                <a href="http://github.com/fredrekt" target="_blank" rel="noopenner noreferrer" className="black-text">
+                  <MDBIcon fab icon="github" />
+                </a>
               </MDBCol>
               <MDBCol md="2" lg="2">
-                <MDBIcon fab icon="linkedin-in" />
+                <a href="https://www.linkedin.com/in/fredrick-garingo-430790185/" target="_blank" rel="noopenner noreferrer" className="black-text">
+                  <MDBIcon fab icon="linkedin-in" />
+                </a>
               </MDBCol>
             </MDBRow>
           </MDBCol>
