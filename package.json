@@ -1,5 +1,7 @@
 {
   "name": "nextapp",
+  "description": "A Minimalist Design of a Next.js Starter. Made with Base Web(baseui) and Material Design Bootstrap.",
+  "author": "Fred Garingo <fredrickjohng7@gmail.com>",
   "version": "0.1.0",
   "private": true,
   "scripts": {
