@@ -1,8 +1,12 @@
 import { MDBCol, MDBContainer, MDBRow } from 'mdbreact'
 import React from 'react'
 import Layout from '../components/Layout'
+import {Button} from 'baseui/button';
+import ArrowRight from 'baseui/icon/arrow-right';
+import {useRouter} from 'next/router';
 
 const MissingPage = () => {
+    const router = useRouter();
     return (
         <Layout page="404">
             <MDBContainer className="py-5 my-5">
@@ -13,6 +17,7 @@ const MissingPage = () => {
                             <p className="lead">Sorry for the inconvenience. We're not able to find what you
                                 were looking for.
                             </p>
+                            <Button onClick={()=>router.back()} endEnhancer={()=><ArrowRight size={24}/>}>Go Back</Button>
                         </div>
                     </MDBCol>
                     <MDBCol md="6" lg="6">
