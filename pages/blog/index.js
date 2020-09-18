@@ -6,7 +6,7 @@ import Layout from '../../components/Layout'
 import ChevronRight from 'baseui/icon/chevron-right';
 
 export const getStaticProps = async () => {
-    const res = await fetch('https://joygaringo-admin.herokuapp.com/blogs')
+    const res = await fetch(process.env.NEXT_PUBLIC_API_BLOGS)
     const blogs = await res.json();
     return {
         props: {

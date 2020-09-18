@@ -4,7 +4,7 @@ import {useRouter} from 'next/router'
 import { MDBContainer } from 'mdbreact';
 
 export const getStaticProps = async ({params}) => {
-    const data = await fetch(`https://joygaringo-admin.herokuapp.com/blogs/${params.id}`);
+    const data = await fetch(`${process.env.NEXT_PUBLIC_API_BLOGS}/${params.id}`);
     const blog = await data.json();
     return {
         props: {
