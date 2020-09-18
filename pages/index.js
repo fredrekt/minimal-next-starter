@@ -1,4 +1,4 @@
-import { MDBBtn, MDBContainer } from 'mdbreact'
+import { MDBContainer } from 'mdbreact'
 import React from 'react'
 import Layout from '../components/Layout'
 
