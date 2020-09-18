@@ -1,7 +1,8 @@
 # Minimal Design - Next.JS 
 A Next.js Starter Project bootstraped with (mdbreact)[https://www.npmjs.com/package/mdbreact], (Styletron)[https://www.styletron.org/getting-started#with-nextjs] and (BaseWeb)[https://www.npmjs.com/package/baseui]. Best for minimalist design. Hope you enjoy 😊! 
 
-## (Live Demo)[https://next-minimalist.ga/]
+## [Live Demo](https://next-minimalist.ga/)
+A simple demo worth a thousand words
 
 ## Design Tools Present
 [Material Design Bootstrap](https://mdbootstrap.com/)
