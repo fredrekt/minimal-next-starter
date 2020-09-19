@@ -8,6 +8,7 @@ import {StyledLink} from 'baseui/link';
 const HomePage = () => {
   const DATA = [
     ['Search Engine Optimization', <Check size={24}/>],
+    ['Google Anayltics Setup', <Check size={24}/>],
     ['Material Design Bootstrap', <Check size={24}/>],
     ['Progressive Image Loading' , <Check size={24}/>],
     ['Mobile Ready Frontend Frameworks', <Check size={24}/>],
