@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import Router from 'next/router';
 import NProgress from 'nprogress'; //nprogress module
 import '../styles/nprogress.css'; //styles of nprogress
+//Google Analytics
+import withGA from "next-ga";
 
 //styletron imports
 import { Provider as StyletronProvider } from 'styletron-react'
@@ -23,4 +25,4 @@ function MyApp({ Component, pageProps }) {
     )
 }
 
-export default MyApp
+export default withGA(process.env.NEXT_PUBLIC_GA_ID, Router)(MyApp)
